@@ -1,6 +1,8 @@
-const cloudinary = require('cloudinary').v2;
-const { CloudinaryStorage } = require('multer-storage-cloudinary');
-
+// const cloudinary = require('cloudinary').v2;
+// const { CloudinaryStorage } = require('multer-storage-cloudinary');
+import { CloudinaryStorage } from "@cloudinary/multer-storage-cloudinary";
+import multer from "multer";
+import { v2 as cloudinary } from "cloudinary";
 cloudinary.config({
     cloud_name:process.env.CLOUD_NAME,
     api_key:process.env.CLOUD_API_KEY,
